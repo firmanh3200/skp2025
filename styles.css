@@ -178,3 +178,23 @@ body{
   .header-inner{ padding:12px 14px; }
   .container{ margin-top:12px; padding-bottom:60px; }
 }
+
+a {
+  color: inherit; /* Menggunakan warna teks dari elemen induk */
+  text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+a:visited {
+  color: inherit; /* Tetap menggunakan warna teks dari elemen induk setelah dikunjungi */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #007bff; /* Contoh: Mengubah warna saat kursor diarahkan (hover) */
+  text-decoration: underline; /* Contoh: Menambahkan garis bawah saat hover (opsional) */
+}
+
+a:active {
+  color: inherit; /* Tetap menggunakan warna teks dari elemen induk saat diklik */
+  text-decoration: none;
+}
