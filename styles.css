@@ -1,0 +1,180 @@
+:root{
+  --bg:#ffffff;
+  --card:#f7fbfb;
+  --muted:#6b7280;
+  --text: #0f172a; /* primary body text */
+  --card-text: #042f31; /* headings inside cards/panels */
+  --accent: #0ea5a4; /* teal */
+  --accent-2:#fb6f6f; /* coral */
+  --glass: rgba(14,165,164,0.08);
+  --radius:12px;
+  --maxWidth:1100px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+  color-scheme: light;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+.site-header{
+  position:sticky;
+  top:0;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6));
+  border-bottom:1px solid rgba(15,23,42,0.06);
+  z-index:40;
+}
+.header-inner{
+  max-width:var(--maxWidth);
+  margin:0 auto;
+  padding:14px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.site-header h1{
+  margin:0;
+  font-size:18px;
+  font-weight:600;
+  letter-spacing:0.2px;
+}
+.header-actions button{
+  background:transparent;
+  border:1px solid rgba(15,23,42,0.06);
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  color:var(--muted);
+}
+.container{
+  max-width:var(--maxWidth);
+  margin:28px auto;
+  padding:0 20px 80px;
+}
+
+/* Intro */
+.intro .lead{
+  margin:0 0 18px 0;
+  color:var(--muted);
+  background:linear-gradient(90deg,var(--glass),transparent);
+  padding:12px;
+  border-radius:10px;
+  font-size:15px;
+}
+
+/* Tabs / panels layout */
+.kegiatan{ display:block; }
+.tabs{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-bottom:18px;
+  flex-wrap:wrap;
+}
+.tab{
+  background:transparent;
+  border:1px solid rgba(15,23,42,0.06);
+  padding:10px 14px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  color:var(--muted);
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.tab[aria-selected="true"]{
+  background: linear-gradient(90deg, rgba(14,165,164,0.12), rgba(251,111,111,0.06));
+  box-shadow: 0 6px 18px rgba(14,165,164,0.06);
+  color: #04363a;
+  transform:translateY(-2px);
+}
+
+/* Panels area */
+.panels{
+  display:grid;
+  gap:14px;
+}
+.panel{
+  background:var(--card);
+  padding:18px;
+  border-radius:var(--radius);
+  border:1px solid rgba(12,18,24,0.04);
+  transition:transform .25s cubic-bezier(.2,.9,.2,1), opacity .18s ease;
+  transform-origin:top center;
+  opacity:0.6;
+  display:none;
+}
+.panel.active{
+  display:block;
+  opacity:1;
+  transform:translateY(0);
+}
+.panel h2{ margin:0 0 8px 0; font-size:16px; color:var(--card-text); }
+.panel p{ margin:0; color:var(--text); /* body-level text color for paragraphs */ }
+.panel ul { padding-left: 20px; /* Berikan indentasi pada daftar */ }
+.panel li { color: black; /* Warna list item yang lebih jelas */ }
+
+/* Accordion styles for portrait - controlled by JS/class */
+.is-accordion .tabs{ display:none; }
+.is-accordion .panels{
+  display:block;
+}
+.accordion-item{
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid rgba(12,18,24,0.04);
+  margin-bottom:10px;
+}
+.accordion-trigger{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+  gap:12px;
+  padding:12px 16px;
+  background:linear-gradient(90deg, rgba(14,165,164,0.04), transparent);
+  cursor:pointer;
+  font-weight:600;
+  color:var(--card-text);
+}
+.accordion-content{
+  padding:12px 16px 18px;
+  background:var(--card);
+  color:var(--text);
+  display:none;
+}
+.accordion-content.open{ display:block; }
+
+/* Footer */
+.site-footer{
+  border-top:1px solid rgba(15,23,42,0.04);
+  margin-top:28px;
+  padding:20px;
+  text-align:center;
+  color:var(--muted);
+}
+
+/* Responsive behavior: landscape (wide) uses tab layout; portrait uses accordion via .is-accordion set by JS */
+@media (min-width: 880px) {
+  .panels{
+    display:block;
+  }
+  .panel{ display:none; }
+  .panel.active{ display:block; }
+  .tabs{ display:flex; }
+}
+
+/* small screens - some spacing improvements */
+@media (max-width:879px){
+  .header-inner{ padding:12px 14px; }
+  .container{ margin-top:12px; padding-bottom:60px; }
+}

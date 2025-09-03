@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SKP 2025</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Import map (reserved for libs if needed) -->
+  <script type="importmap">
+  {
+    "imports": {}
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <h1>Buku Saku Survei Kesejahteraan Petani (SKP) 2025</h1>
+      <!-- <div class="header-actions">
+        <button id="themeToggle" aria-pressed="false" title="Toggle theme">Mode</button>
+      </div> -->
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <section class="intro">
+      <h2 class="lead"><strong>Petani sebagai pelaku utama dalam pembangunan pertanian memainkan peran sentral dalam produksi pangan, pengelolaan sumber daya alam, serta ketahanan ekonomi lokal. Oleh karena itu, peningkatan kesejahteraan petani menjadi salah satu sasaran pembangunan yang harus diwujudkan.</strong></h2>
+    </section>
+
+    <!-- Tabs / Accordion -->
+    <section class="kegiatan" id="kegiatan">
+      <!-- Tab buttons (rendered horizontally in landscape, hidden in portrait) -->
+      <div class="tabs" role="tablist" aria-label="Daftar kegiatan" id="tabList">
+        <button role="tab" aria-selected="true" aria-controls="panel-9" id="tab-9" class="tab"><i>Pendahuluan</i></button>
+        <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" class="tab"><i>Tujuan</i></button>
+        <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" class="tab"><i>Cakupan</i></button>
+        <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" class="tab"><i>Sampel</i></button>
+        <button role="tab" aria-selected="false" aria-controls="panel-4" id="tab-4" class="tab"><i>P M L</i></button>
+        <button role="tab" aria-selected="false" aria-controls="panel-5" id="tab-5" class="tab"><i>P P L</i></button>
+        <button role="tab" aria-selected="false" aria-controls="panel-6" id="tab-6" class="tab"><i>Alur</i></button>
+        <button role="tab" aria-selected="false" aria-controls="panel-7" id="tab-7" class="tab"><i>Materi</i></button>
+        <button role="tab" aria-selected="false" aria-controls="panel-8" id="tab-8" class="tab"><i>Evaluate</i></button>
+      </div>
+
+      <!-- Panels -->
+      <div class="panels">
+        <article id="panel-9" role="tabpanel" aria-labelledby="tab-9" class="panel">
+            <h2>Latar Belakang</h2>
+            <p>
+                Sektor pertanian merupakan sektor strategis yang memiliki peran penting dalam mendorong pertumbuhan ekonomi yang inklusif dan berkelanjutan, memperkuat ketahanan pangan nasional, serta meningkatkan kesejahteraan masyarakat, khususnya di perdesaan. Dalam arah kebijakan pembangunan nasional ke depan, sebagaimana tertuang dalam Rencana Pembangunan Jangka Panjang Nasional (RPJPN) 2025–2045 dan Rencana Pembangunan Jangka Menengah Nasional (RPJMN) 2025–2029, transformasi sektor pertanian menuju sistem pangan yang tangguh, berkelanjutan, dan berdaya saing merupakan salah satu prioritas utama.
+            </p>
+            <br>
+            <p>
+                Selama ini, kesejahteraan petani hanya diukur menggunakan berbagai indikator proxy yaitu Nilai Tukar Petani (NTP), Nilai Tukar Usaha Pertanian (NTUP), dan tingkat kemiskinan. NTP merupakan ukuran kemampuan daya tukar/beli petani di perdesaan, sedangkan NTUP adalah ukuran kemampuan petani dalam memenuhi kebutuhan usaha pertaniannya. Kedua ukuran tersebut tidak dapat langsung mencerminkan tingkat kesejahteraan karena keterbatasan penghitungannya yang mengasumsikan produksi tetap dan hanya harga yang berubah. Tingkat kemiskinan dihitung menggunakan data konsumsi dan pengeluaran rumah tangga usaha pertanian. 
+            </p>
+            <br>
+            <p>
+                Ketiga indikator tersebut dihitung hanya dari sisi ekonomi (pengeluaran dan harga) sehingga belum dapat mengukur kesejahteraan petani secara menyeluruh. 
+            </p>
+            <br>
+            <p>    
+                <a href="https://drive.google.com/file/d/1rse3mDeRHk42qv1aSbMBZ2ems4x8nZJ9/view?usp=sharing" target="_blank">Selengkapnya</a>
+            </p>
+        </article>
+
+        <article id="panel-1" role="tabpanel" aria-labelledby="tab-1" class="panel">
+          <h2>Tujuan Survei</h2>
+          <p>
+            <ul>
+              <li>
+                Mendapatan informasi karakteristik sosial ekonomi dari rumah tangga usaha pertanian;
+              </li>
+              <li>
+                Mendapatkan informasi persentase rumah tangga usaha pertanian menurut kategori tingkat kesejahteraan;
+              </li>
+              <li>
+                Mendapatkan data yang diperlukan untuk menyusun Indeks Kesejahteraan Petani.
+              </li>
+            </ul>
+           </p>
+        </article>
+
+        <article id="panel-2" role="tabpanel" aria-labelledby="tab-2" class="panel">
+          <h2>Cakupan Survei</h2>
+            <p>
+                Cakupan pendataan SKP 2025 adalah rumah tangga usaha pertanian (RTUP), dengan cakupan usaha seluruh subsektor pertanian. Kegiatan jasa pertanian tidak dicakup dalam survei ini.
+            </p>
+            <p>
+                Cakupan subsektor yang menjadi cakupan SKP 2025 adalah.
+                <ul>
+                    <li>Subsektor tanaman pangan;</li>
+                    <li>Subsektor hortikultura;</li>
+                    <li>Subsektor perkebunan;</li>
+                    <li>Subsektor peternakan;</li>
+                    <li>Subsektor kehutanan;</li>
+                    <li>Subsektor perikanan:
+                        <ul>
+                            <li>kegiatan pembudidayaan ikan;</li>
+                            <li>kegiatan penangkapan ikan.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+            
+        </article>
+
+        <article id="panel-3" role="tabpanel" aria-labelledby="tab-3" class="panel">
+          <h2>Sampel</h2>
+            <p>
+                Keterwakilan sampel dan tingkat respon hasil pencacahan sangat memengaruhi estimasi. Oleh karena itu, jika terjadi nonrespons unit RTUP dapat diganti dengan sampel cadangan yang telah disediakan.
+            </p>
+            <p>
+                Kondisi yang memungkinkan dilakukan penggantian sampel sebagai berikut:
+                <ol>
+                    <li>Pada kondisi tertentu RTUP menolak untuk diwawancarai atau tidak dapat diwawancarai sampai dengan batas waktu pencacahan;</li>
+                    <li>Semua usaha pertanian tidak/belum berproduksi;</li>
+                    <li>Responden bukan rumah tangga usaha pertanian;</li>
+                    <li>RTUP pindah ke luar SLS atau tidak ditemukan keberadaannya.</li>
+                </ol>
+            </p>
+            <hr>
+            <p>
+                Penentukan sampel RTUP pengganti yang diambil dari daftar RTUP cadangan
+                harus memperhatikan beberapa hal sesuai urutan prioritas sebagai berikut
+                <ol>
+                    <li>Sampel pengganti mengusahakan subsektor utama yang sama dengan sampel utama dan berada pada SLS yang sama.</li>
+                    <li>Sampel pengganti mengusahakan subsektor utama yang sama dengan sampel utama dan berada pada SLS yang berbeda pada wilayah tugas Petugas Pendataan Lapangan yang sama atau berbeda tetapi masih di bawah koordinasi Petugas Pemeriksaan Lapangan yang sama.</li>
+                    <li>Sampel pengganti mengusahakan komoditas sesuai subsektor utama yang sama dengan sampel utama dan berada pada SLS yang sama atau berbeda, pada wilayah tugas Petugas Pendataan Lapangan yang sama atau berbeda tetapi masih di bawah koordinasi Petugas Pemeriksaan Lapangan yang sama.</li>
+                    <li>Sampel pengganti mengusahakan subsektor utama yang berbeda dengan sampel utama dan berada pada SLS yang sama/berbeda pada wilayah tugas Petugas Pendataan Lapangan yang sama atau berbeda tetapi masih di bawah koordinasi Petugas Pemeriksaan Lapangan yang sama.</li>
+                </ol>
+            </p>
+            <hr>
+            <p>
+                Prosedur pendataan dan penggantian sampel RTUP sebagai berikut.
+                <ol>
+                    <li>Admin Kabupaten/Kota mengalokasikan sampel utama dan cadangan kepada Petugas Pemeriksaan Lapangan dan Petugas Pendataan Lapangan.</li>
+                    <li>Petugas Pendataan Lapangan melakukan pendataan sampel utama sesuai alokasi yang diberikan oleh Admin Kabupaten/Kota.</li>
+                    <li>Petugas Pemeriksaan Lapangan melakukan pemeriksaan dan approve/reject data hasil pendataan Petugas Pendataan Lapangan.</li>
+                    <li>Apabila ada sampel utama yang tidak berhasil didata, Petugas Pendataan Lapangan melakukan penggantian sampel sesuai ketentuan.</li>
+                    <li>Petugas Pendataan Lapangan melakukan pendataan sampel cadangan.</li>
+                    <li>Petugas Pemeriksaan Lapangan melakukan pemeriksaan dan approve/reject data.</li>
+                    <li>Lakukan nomor 4 sampai dengan 6 hingga target sampel RTUP terpenuhi.</li>
+                </ol>
+            </p>
+            <hr>
+            <p>
+                Beberapa hal yang harus diperhatikan untuk memenuhi akuntabilitas
+                pengumpulan data:
+                <ol>
+                    <li>Pada akhir pencacahan, seluruh sampel utama, dan sampel cadangan yang digunakan sebagai pengganti harus dilengkapi dengan informasi hasil pencacahan dan dikirim (submit) melalui aplikasi pengumpulan data.</li>
+                    <li>Apabila terdapat unit sampel nonrespon, penanggung jawab kegiatan di kabupaten/kota harus membuat berita acara yang ditandatangani oleh Petugas Pendataan Lapangan dan Petugas Pemerikaan Lapangan, serta diketahui oleh Kepala BPS Kabupaten/Kota.</li>
+                </ol>
+            </p>
+        </article>
+
+        <article id="panel-4" role="tabpanel" aria-labelledby="tab-4" class="panel">
+          <h2>Petugas Pemeriksaan Lapangan</h2>
+          <p>
+                PML memiliki tugas sebagai berikut:
+                <ol>
+                    <li>Mengikuti pelatihan SKP 2025;</li>
+                    <li>Menerima softcopy Buku Pedoman Pendataan Lapangan SKP2025 dan Buku
+                Pedoman Pemeriksaan Lapangan SKP2025;</li>
+                    <li>Menerima surat tugas dari BPS Kabupaten/Kota;</li>
+                    <li>Melakukan instalasi aplikasi FASIH, sinkronisasi aplikasi, serta memastikan
+                penugasan (assignment) sesuai dengan sampel yang menjadi alokasi tugasnya;</li>
+                    <li>Bersama dengan Petugas Pendataan Lapangan, melakukan koordinasi dengan
+                penguasa wilayah dan Ketua SLS setempat untuk menginformasikan kegiatan
+                lapangan SKP2025;</li>
+                    <li>Melakukan pengawasan/pendampingan terhadap Petugas Pendataan Lapangan
+                secara bergiliran yang menjadi tanggung jawabnya untuk memastikan bahwa
+                pencacahan sesuai dengan prosedur yang ditetapkan;</li>
+                    <li>Melakukan pemeriksaan data yang sudah dikirim oleh Petugas Pendataan
+                Lapangan;</li>
+                    <li>Mengisi Blok Pemeriksaan Kuesioner yang terdapat pada e-form SKP2025;</li>
+                    <li>Mengesahkan (approval) data apabila hasil pendataan lapangan tidak ditemukan
+                kesalahan atau mengembalikan (reject) kepada Petugas Pendataan Lapangan
+                apabila data masih diragukan atau perlu perbaikan (harus disertai dengan catatan
+                hasil pemeriksaan);</li>
+                    <li>Memastikan semua data hasil pendataan lapangan yang dikirimkan Petugas
+                Pendataan Lapangan menjadi tanggung jawabnya diperiksa dan disetujui
+                (approved) jika sudah tidak ada kesalahan;</li>
+                    <li>Berkomunikasi dan berdiskusi dengan Petugas Pendataan Lapangan maupun
+                Penanggung Jawab Teknis SKP2025 BPS Kabupaten/Kota mengenai kemajuan dan
+                permasalahan yang terjadi pada kegiatan pendataan lapangan;</li>
+                    <li>Mematuhi mekanisme, tahapan, dan jadwal waktu yang ditentukan;</li>
+                    <li>Melaksanakan tugas, perintah langsung/tidak langsung dari Pimpinan BPS.</li>
+                </ol>
+          </p>
+        </article>
+
+        <article id="panel-5" role="tabpanel" aria-labelledby="tab-5" class="panel">
+          <h2>Petugas Pendataan Lapangan</h2>
+          <p>
+            PPL memiliki tugas sebagai berikut:
+            <ol>
+                <li>Mengikuti pelatihan SKP2025;</li>
+                <li>Menerima softcopy Buku Pedoman Pendataan Lapangan SKP2025;</li>
+                <li>Menerima surat tugas dari BPS Kabupaten/Kota;</li>
+                <li>Melakukan instalasi aplikasi FASIH, sinkronisasi aplikasi, serta memastikan
+                penugasan (assignment) sudah sesuai dengan sampel yang menjadi alokasi tugasnya;</li>
+                <li>Bersama dengan Petugas Pemeriksaan Lapangan, melakukan koordinasi dengan
+                penguasa wilayah dan Ketua SLS setempat untuk menginformasikan kegiatan lapangan SKP2025;</li>
+                <li>Melakukan pendataan lapangan dengan menggunakan aplikasi FASIH;</li>
+                <li>Memeriksa kelengkapan isian e-form SKP2025;</li>
+                <li>Mengirim data yang sudah diinput;</li>
+                <li>Memperbaiki data hasil pendataan lapangan yang dikembalikan (rejected) oleh Petugas Pemeriksaan Lapangan atau melakukan konfirmasi isian dengan melakukan kunjungan ulang ke responden apabila diperlukan sampai tidak ditemukan lagi kesalahan;</li>
+                <li>Memastikan semua data hasil pendataan lapangan yang menjadi tanggung
+                jawabnya disetujui (approved) oleh Petugas Pemeriksaan Lapangan;</li>
+                <li>Berkomunikasi dan berdiskusi dengan Petugas Pemeriksaan Lapangan mengenai
+                kemajuan dan permasalahan yang terjadi pada kegiatan pendataan lapangan;</li>
+                <li>Mematuhi mekanisme, tahapan, dan jadwal waktu yang ditentukan;</li>
+                <li>Melaksanakan tugas, perintah langsung maupun tidak langsung dari Pimpinan BPS.</li>
+            </ol>
+          </p>
+          <hr>
+          <h3>TATA CARA WAWANCARA</h3>
+          <p>
+            Dalam melakukan kunjungan/wawancara dengan responden perhatikan tata cara
+            berikut.
+            <ol>
+                <li>Usahakan agar kunjungan dapat diatur sedemikian rupa sehingga responden ada
+            di rumah pada saat petugas datang untuk melakukan wawancara;</li>
+                <li>Dalam melaksanakan pendataan, akan dijumpai berbagai sikap responden,
+            sebagian diantaranya terus terang (jujur) dan senang membantu, beberapa orang
+            ragu-ragu dan tidak tegas, serta sebagian lagi curiga dan dengan sikap menentang.
+            Gunakan kecakapan, kesabaran, dan sikap bijaksana agar wawancara berhasil;</li>
+                <li>Tidak seorangpun diperkenankan untuk menemani pendataan kecuali Petugas
+            Pemeriksaan Lapangan dan atau atasannya;</li>
+                <li>Sebelum memasuki rumah untuk mengadakan wawancara, harap minta izin
+            dengan mengucapkan salam, mengetuk pintu atau dengan cara lain yang biasa
+            berlaku di daerah setempat;</li>
+                <li>Petugas Pendataan Lapangan diharapkan selalu bersikap ramah dan dapat
+            menjaga etika dan sopan santun yang berlaku;</li>
+                <li>Mulailah setiap wawancara dengan memperkenalkan diri dengan menjelaskan
+            maksud kedatangan. Bila perlu tunjukkan surat tugas/tanda pengenal;</li>
+                <li>Petugas Pendataan Lapangan menjelaskan kepada responden bahwa pendataan
+            menggunakan HP yang mungkin dirasa kurang sopan dalam proses wawancara;</li>
+                <li>Sebelum melakukan wawancara beri penjelasan tentang pentingnya memberikan
+            keterangan yang benar dan yakinkan kepada responden mengenai kerahasiaan
+            keterangan yang dikumpulkan;</li>
+                <li>Tegaskan bahwa keterangan yang dikumpulkan hanya akan digunakan untuk
+            keperluan perencanaan pembangunan dan tidak ada sangkut paut dengan
+            penyidikan dan pajak;</li>
+                <li>Kerjasama dengan responden perlu diperhatikan, sehingga mereka tidak segan-
+            segan untuk menjawab pertanyaan-pertanyaan dengan tepat;</li>
+                <li>Bersabarlah terhadap rasa ingin tahu responden, dan jawablah pertanyaan
+            responden dengan tepat dan jelas;</li>
+                <li>Jangan memberikan tanggapan yang tidak baik terhadap jawaban yang diberikan
+            responden atau kehilangan kesabaran. Bersikaplah tenang dalam menghadapi
+            suasana yang tidak diinginkan;</li>
+                <li>Jika responden membelokkan percakapan kepada hal-hal yang menyimpang dari
+            pelaksanaan survei, kembalikan secara bijaksana pembicaraan ke arah daftar
+            isian dan usahakan mendapatkan keterangan yang diperlukan;</li>
+                <li>Setelah selesai melakukan wawancara, jangan lupa mengucapkan terima kasih
+            atas bantuan responden. Katakan kepada responden, kemungkinan ada petugas
+            yang akan datang kembali untuk mendapatkan keterangan tambahan. Kemudian
+            lanjutkan pada responden terpilih berikutnya;</li>
+                <li>Lakukan kunjungan ulang jika memang diperlukan. Hal ini mungkin terjadi karena
+            pada kunjungan pertama tidak berhasil mendapatkan semua keterangan yang
+            diperlukan.</li>
+            </ol>
+          </p>
+        </article>
+
+        <article id="panel-6" role="tabpanel" aria-labelledby="tab-6" class="panel">
+          <h2>Alur Pendataan</h2>
+          <p>
+            Tahapan alur kegiatan pendataan RTUP adalah sebagai berikut:
+            <ol>
+                <li>Administrator BPS Kabupaten/Kota menambahkan akun viewer dan petugas SKP2025 serta melakukan assigment sampel ke Petugas Pemeriksaan Lapangan dan Petugas Pendataan Lapangan sesuai beban tugasnya;</li>
+                <li>Petugas Pemeriksaan Lapangan dan Petugas Pendataan Lapangan menerima daftar sampel RTUP yang harus dilakukan pendataan sesuai wilayah tugas yang sudah terpasang pada gawai Petugas Pendataan Lapangan;</li>
+                <li>Petugas Pemeriksaan Lapangan bersama Petugas Pendataan Lapangan melakukan koordinasi dalam rangka persiapan sebelum pendataan;</li>
+                <li>Petugas Pemeriksaan Lapangan bersama Petugas Pendataan Lapangan melakukan koordinasi ketua/pengurus Satuan Lingkungan Setempat (SLS) untuk menginformasikan adanya kegiatan SKP2025 di wilayah tersebut dengan membawa surat tugas dari BPS kabupaten/kota;</li>
+                <li>Petugas Pemeriksaan Lapangan bersama Petugas Pendataan Lapangan melakukan pengenalan lokasi wilayah tugas pendataan dan penelusuran lokasi sampel yang menjadi tugasnya dengan berpedoman pada peta SLS kondisi terakhir yang disiapkan oleh BPS Kabupaten/Kota;</li>
+                <li>
+                    Petugas Pendataan Lapangan mengunjungi sampel RTUP terpilih:
+                    <ul>
+                        <li>Jika ditemukan, maka Petugas Pendataan Lapangan melakukan pendataan menggunakan e-form SKP2025.S;</li>
+                        <li>Jika ditemukan tetapi tidak bersedia diwawancarai, tidak dapat diwawancarai sampai dengan batas waktu pencacahan, semua usaha pertanian tidak/belum berproduksi, bukan rumah tangga usaha pertanian, pindah keluar SLS, tidak dapat diwawancarai dengan alasan lainnya, maka:
+                            <ol>
+                                <li>Petugas Pendataan Lapangan menuliskan keterangan di Blok IX. CATATAN dan mengirimkan (submit) isian e-form SKP2025.S;</li>
+                                <li>Petugas Pendataan Lapangan melakukan penggantian sampel RTUP sesuai kriteria dan melaporkannya kepada Petugas Pemeriksaan Lapangan;</li>
+                                <li>Petugas Pemeriksaan Lapangan melakukan pengecekan dan pengawasan penggantian sampel RTUP;</li>
+                                <li>Petugas Pendataan Lapangan mengunjungi sampel RTUP cadangan yang sudah disetujui oleh Petugas Pemeriksaan Lapangan dan melakukan pendataan menggunakan e-form SKP2025.S;</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+                <li>Petugas Pendataan Lapangan melakukan pendataan dan geotagging RTUP terpilih menggunakan e-form SKP2025.S pada aplikasi FASIH;</li>
+                <li>Petugas Pendataan Lapangan melakukan pengecekan kelengkapan dan kewajaran isian. Jika ditemukan isian yang belum lengkap atau tidak wajar, Petugas Pendataan Lapangan harus mengkonfirmasi kembali jawaban ke responden;</li>
+                <li>Apabila isian sudah benar maka Petugas Pendataan Lapangan mengirimkan (submit) isian e-form SKP2025.S;</li>
+                <li>Setelah menyelesaikan pendataan untuk satu responden, Petugas Pendataan Lapangan melanjutkan pendataan sampai seluruh responden dalam satu SLS yang merupakan wilayah tugasnya selesai dilakukan pendataan;</li>
+                <li>Apabila RTUP yang dikunjungi belum dapat diwawancarai, lanjutkan pendataan ke rumah tangga berikutnya. Sebelum periode pendataan berakhir, Petugas Pendataan Lapangan harus mengunjungi kembali unit usaha pertanian perorangan tersebut untuk melakukan wawancara;</li>
+                <li>Petugas Pemeriksaan Lapangan melakukan pengawasan secara bergiliran ke Petugas Pendataan Lapangan yang berada di bawah pengawasannya;</li>
+                <li>Petugas Pemeriksaan Lapangan melakukan pemeriksaan kelengkapan, konsistensi, dan kewajaran isian data untuk setiap UTP yang sudah di submit oleh Petugas Pendataan Lapangan. Pemeriksaan isian e-form SKP2025.S dilakukan oleh Petugas Pemeriksaan Lapangan dengan ketentuan:
+                    <ul>
+                        <li>Jika isian dokumen masih ditemukan kesalahan, data tidak lengkap, tidak konsisten, atau tidak wajar, maka Petugas Pemeriksaan Lapangan akan melakukan reject pada dokumen e-form SKP2025.S dan memberikan tugas ke Petugas Pendataan Lapangan untuk melakukan perbaikan atau kunjungan kembali ke responden jika diperlukan;</li>
+                        <li>Jika isian dokumen sudah benar, maka Petugas Pemeriksaan Lapangan melakukan Approve pada dokumen e-form SKP2025.S;</li>
+                    </ul>
+                </li>
+                <li>Administrator BPS Kabupaten/Kota melakukan pemeriksaan kelengkapan, konsistensi, dan kewajaran isian data untuk setiap UTP yang sudah dilakukan appoval oleh Petugas Pemeriksaan Lapangan. Pemeriksaan isian e-form SKP2025.S dilakukan oleh Petugas Pemeriksaan Lapangan dengan ketentuan yang sama dengan poin 13.a dan poin 13.b;</li>
+                <li>Petugas Pemeriksaan Lapangan serta Administrator, Penanggung Jawab Teknis dan Penanggung Jawab BPS Kabupaten/Kota melakukan pemantauan hasil pendataan oleh Petugas Pendataan Lapangan secara berkala agar penyelesaian pendataan dapat selesai tepat waktu.</li>
+            </ol>
+          </p>
+        </article>
+
+        <article id="panel-7" role="tabpanel" aria-labelledby="tab-7" class="panel">
+          <h2>Materi SKP 2025</h2>
+          <p>
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1uYEogPoEvLrievqr-NQ0UZwZbg_IlSSC/view?usp=sharing" target="_blank">Buku Pedoman Pendataan</a></li>
+                <li><a href="" target="_blank"></a></li>
+                <li><a href="" target="_blank"></a></li>
+                <li><a href="" target="_blank"></a></li>
+                <li><a href="" target="_blank"></a></li>
+                <li><a href="" target="_blank"></a></li>
+                <li><a href="" target="_blank"></a></li>
+            </ul>
+          </p>
+        </article>
+
+        <article id="panel-8" role="tabpanel" aria-labelledby="tab-8" class="panel">
+          <h2>Mengevaluasi</h2>
+          <p>
+            <ul>
+                <li><b>Evaluasi Proses:</b> Evaluasi seluruh proses pembuatan profil desa/kelurahan, mulai dari perencanaan hingga diseminasi.</li>
+                <br>
+                <li><b>Evaluasi Produk:</b> Evaluasi kualitas dan manfaat data profil desa/kelurahan bagi pengguna.</li>
+                <br>
+                <li><b>Identifikasi Pelajaran:</b> Identifikasi pelajaran yang dapat dipetik untuk perbaikan proses di masa mendatang.</li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1WLuE8fo5vu3QADpTPuYKJQUTQdY6Xs6P/preview" target="_blank">Modul Diseminasi dan Evaluasi</a>
+                </li>
+            </ul>
+            
+          </p>
+          <br>
+          <h2>Dimensi Kualitas Data</h2>
+          <p>
+            <ul>
+                <li><b>Relevan</b>: Data dikatakan relevan jika data tersebut berhubungan langsung dengan kebutuhan atau tujuan yang ingin dicapai. Data yang relevan membantu menjawab pertanyaan, memecahkan masalah, atau membuat keputusan yang tepat.</li>
+                <br>
+                <li><b>Akurat</b>: Data yang akurat adalah data yang mencerminkan fakta atau nilai sebenarnya dari apa yang diwakilinya. Dengan kata lain, data yang akurat adalah data yang benar dan bebas dari kesalahan.</li>
+                <br>
+                <li><b>Mudah Diakses</b>: Data yang mudah diakses berarti data tersebut tersedia bagi orang yang berwenang ketika mereka membutuhkannya, dalam format yang dapat mereka gunakan, dan dengan cara yang efisien.</li>
+                <br>
+                <li><b>Konsisten</b>: Data dikatakan konsisten jika data tersebut tidak bertentangan dengan data lain yang terkait atau seharusnya sama. Dengan kata lain, data konsisten jika data tersebut logis, selaras, dan tidak menimbulkan kebingungan. Konsistensi memastikan bahwa data yang sama, diwakili di tempat yang berbeda, memiliki nilai yang sama.</li>
+                <br>
+                <li><b>Tepat Waktu</b>: Data yang tepat waktu adalah data yang tersedia pada saat dibutuhkan untuk pengambilan keputusan atau tindakan. Data yang terlambat mungkin tidak lagi relevan atau berguna, dan bahkan dapat menyebabkan keputusan yang salah.</li>
+                <br>
+                <li><b>Mudah Ditafsirkan</b>: Data yang mudah ditafsirkan adalah data yang disajikan dengan jelas, diberi label yang tepat, dapat dipahami tanpa keahlian khusus, dan memberikan makna yang relevan bagi penggunanya. Intinya, data harus "berbicara sendiri" semudah mungkin.</li>
+            </ul>
+          </p>
+          <br>
+          <h2>Modul Pembelajaran</h2>
+          <p>
+            <ul>
+                <li>
+                    <a href="https://drive.google.com/file/d/1cmB7U6qWBQYrG_5sUiuKJyz4EDb20IL5/preview" target="_blank">Dasar-Dasar Statistik</a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/18Em1hySNdkAoEt4YJysUblFd0eQGOIwX/preview" target="_blank">Contoh Implementasi Kegiatan Statistik</a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1MXduD16UdSjHK9zCU_GloQ1bnSaawi4u/view?usp=sharing" target="_blank">Kualitas Data</a>
+                </li>
+            </ul>
+          </p>
+        </article>
+      </div>
+    </section>
+    <br>
+    <section class="intro">
+      <h2 class="lead"><b>Kegiatan statistik</b> adalah serangkaian aktivitas yang meliputi perencanaan, pengumpulan, pengolahan, dan analisis data untuk menghasilkan statistik.</h2>
+    </section>
+
+    <section class="intro">
+      <h2 class="lead"><strong>Satu Data Indonesia adalah Kebijakan tata kelola data pemerintah untuk menghasilkan data yang akurat, mutakhir, terpadu, dan dapat dipertanggungjawabkan, serta mudah diakses dan dibagipakaikan antar instansi pusat dan instansi daerah melalui pemenuhan standar data, metadata, interoperabilitas data, dan menggunakan kode referensi dan data induk.</strong></h2>
+    </section>
+
+    <section class="intro">
+      <h2 class="lead"><b>Sistem Statistik Nasional (SSN)</b> adalah suatu tatanan yang terdiri atas unsur-unsur kebutuhan statistik, sumber daya, metode, sarana dan prasarana, ilmu pengetahuan dan teknologi, perangkat hukum, serta masukan dari Forum Masyarakat Statistik (FMS).</h2>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <small><span id="year"></span> &copy; Tim Pembina Desa/Kelurahan Cinta Statistik<br>BPS Provinsi Jawa Barat</small>
+    </div>
+  </footer>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
